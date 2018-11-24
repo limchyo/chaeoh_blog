@@ -11,10 +11,18 @@
       <div class="blog-post">
         <p>{{ article_detail.content }}</p>
       </div>
-      <div>
-        {% for comment in article_detail.article_comments.all %}
-        <div>{{ comment.username }} : {{ comment.content }}</div>
-        {% endfor %}
+      <div class="comments">
+        <h3>Comments</h3>
+          <div class="comment">
+            <div class="bg-info" class="content">
+              {% for comment in article_detail.article_comments.all %}
+              <h4 class="author">{{ comment.username }}</h4>
+              <div class="text">
+              {{ comment.content }}
+              </div>
+              {% endfor %}
+            </div>
+          </div>
       </div>
       <div class="reply-form">
         <form class="form-inline" method=post action="">

@@ -29,8 +29,8 @@
 }
 
 .blog-description {
-  font-size: 20px;
-  color: #999;
+    font-size: 20px;
+    color: #999;
 }
 
 .lead {
@@ -50,8 +50,8 @@
 }
 
 .blog-post-title {
-  margin-bottom: 5px;
-  font-size: 40px;
+    margin-bottom: 5px;
+    font-size: 40px;
 }
 
 .sidebar-module-inset {
@@ -72,4 +72,19 @@
 
 .reply-form {
     margin-top: 35px;
+}
+
+h3 {
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.author {
+  font-family: monospace;
+  font-weight: bold;
+}
+
+.text {
+  font-family: monospace;
+  margin-bottom: 20px;
 }
