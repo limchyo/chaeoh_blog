@@ -16,10 +16,12 @@
           <div class="comment">
             <div class="bg-info" class="content">
               {% for comment in article_detail.article_comments.all %}
+              {% if comment.approved_comment is True %}
               <h4 class="author">{{ comment.username }}</h4>
               <div class="text">
               {{ comment.content }}
               </div>
+              {% endif %}
               {% endfor %}
             </div>
           </div>

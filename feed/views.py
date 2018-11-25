@@ -59,11 +59,10 @@ def detail(request, article_id):
             article=article_detail,
             username=username,
             content=content,
+            approved_comment=False
         )
 
         return HttpResponseRedirect("/{}/".format(article_id))
-
-
 
     return render(request, "detail.html", ctx)
 
