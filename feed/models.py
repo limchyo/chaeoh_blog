@@ -16,6 +16,7 @@ class Article(models.Model):
     )
 
     title = models.CharField(max_length=200)
+    small_title = models.CharField(max_length=150, null=True)
     content = models.TextField()
     category = models.CharField(
         max_length=2,
